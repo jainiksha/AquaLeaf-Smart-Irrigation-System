@@ -1,7 +1,7 @@
 #define BLYNK_TEMPLATE_ID   "TMPL3J_xrfAVf"
 #define BLYNK_TEMPLATE_NAME "AQUALEAF"
 #define BLYNK_DEVICE_NAME   "AQUALEAF"
-#define BLYNK_AUTH_TOKEN    "LL41Hm02x_E8a-s8vL65nAhxO9JqxGbF"
+#define BLYNK_AUTH_TOKEN "YOUR_BLYNK_AUTH_TOKEN"
 
 #define BLYNK_PRINT Serial
 #include <WiFi.h>
@@ -20,8 +20,8 @@
 DHT dht(DHTPIN, DHTTYPE);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-char ssid[] = "Dnet";
-char pass[] = "abcdefgh";
+char ssid[] = "YOUR_WIFI_NAME";
+char pass[] = "YOUR_WIFI_PASSWORD";
 
 int pumpStatus = 0;
 int manualPumpControl = 0;
